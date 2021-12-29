@@ -33,10 +33,41 @@ public class StringTest {
         System.out.println("starts with " + startstr1 + " ? " + retval1);
         System.out.println("starts with " + startstr2 + " ? " + retval2);
 
-        //将该字符串围绕给定的匹配进行拆分
-        
-        String s = String.format("111=%s", str);
-        System.out.println(s);
+        //使用指定的格式字符串和返回格式化字符串
+        System.out.println(String.format("111=%s", str));
+        //将该字符串围绕给定的匹配进行拆分 split
+        //eg
+        String splitstr1 = "www.wwww.wwww";
+        String[] splitstr2 = splitstr1.split(".");
+        System.out.println(splitstr2);
+        //trim()去除字符串中首尾空格
+        String trim1 = "   1111   ";
+        System.out.println(trim1.trim());
+        //valueof(T a) 将T类型转化成字符串
+        //eg
+        int int1 = 111;
+        System.out.println(String.valueOf(int1));
+        //indexOf(String str, int fromIndex)从fromIndex搜索str，返回第一次出现str的索引
+        //lastIndexOf(int ch, int fromIndex)返回此字符串中最后一次出现的指定字符的索引，从指定的索引开始向后搜索。
+        String index_of = "Collections of tutorials at tutorials point";
+        System.out.println("index = " + index_of.indexOf("tutorials", 10));
+        System.out.println("index = " + index_of.indexOf("admin"));
+
+        //endsWith(String suffix) 返回是否这个字符串的后缀为Suffix
+        String endsWith1 = "www.gitbook.net";
+        // the end string to be checked
+        String endstr1 = ".com";
+        String endstr2 = ".org";
+        // checks that string str ends with given substring
+        boolean endsWith2 = endsWith1.endsWith(endstr1);
+        boolean endsWith3 = endsWith1.endsWith(endstr2);
+        // prints true if the string ends with given substring
+        System.out.println("ends with " + endstr1 + " ? " + endsWith2);
+        System.out.println("ends with " + endstr2 + " ? " + endsWith3);
+
+        //toLowerCase()把字符串转化成小写
+        str.toLowerCase();
+
 
     }
 }
