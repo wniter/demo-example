@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @create 2021-12-29 20:27
  */
-public class StringTest1 {
+public class StringTestone {
     public static void main(String[] args) {
         //boolean contains(CharSequence s)
         // 如果这个字符串包含s，如包含s此方法返回true,否则返回false。

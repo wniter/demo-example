@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * @create 2021-12-29 22:10
  */
-public class ArrayListOne {
+public class ArrayListTest {
     public static void main(String[] args) {
         //add,size,get,toArray,addAll,remove,clear,isEmpty,iterator,contains,set,indexOf,clone,subList,
         //stream,ensureCapacity,trimToSize,removeAll,toString,equals,listIterator,forEach,hashCode,sort,retainAll,

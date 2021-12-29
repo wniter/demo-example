@@ -4,6 +4,8 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.RequestEntity;
 import org.springframework.lang.Nullable;
 
+import java.lang.reflect.Constructor;
+
 /**
  * @create 2021-12-29 22:32
  */
@@ -35,4 +37,13 @@ public class ClassTest {
 //                !RequestEntity.class.isAssignableFrom(clazz)) ||
 //                HttpHeaders.class.isAssignableFrom(clazz)));
 //    }
+
+    //反射=====
+    public static void ClassTestone () throws Exception {
+        //获取Class对象
+        Class<?> clazz = Class.forName(ClassTest.class.getName());
+        //获取class类的构造器方法
+        Constructor constructor =clazz.getConstructor();
+
+    }
 }
