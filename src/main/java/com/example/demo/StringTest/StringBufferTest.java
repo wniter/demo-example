@@ -23,7 +23,7 @@ public class StringBufferTest {
         System.out.println(buffer);
         //length
         buffer.length();
-        
+
 
     }
 }
