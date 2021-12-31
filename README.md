@@ -5,7 +5,7 @@
  one:
  1.not finish classTest, should handle reflant together.
  2. file
- 3. Pattern
+ 3. Pattern Method InputStream 
  two:
  stramTest maybe handle with collection
  three:
