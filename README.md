@@ -5,9 +5,12 @@
  one:
  1.not finish classTest, should handle reflant together.
  2. file
- 3. Pattern Method InputStream 
+ 3. Pattern Method InputStream
+ 4. Collectors Field OutputStream
+5. Charset ByteBuffer
+
  two:
- stramTest maybe handle with collection
+ stramTest maybe handle with collection Constructor
  three:
  SystemTest refer to gc and so so 
  four:
