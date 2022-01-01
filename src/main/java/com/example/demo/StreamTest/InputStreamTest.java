@@ -10,6 +10,7 @@ import java.io.*;
 public class InputStreamTest {
     public static void main(String[] args) {
         //close,read,available,skip,reset,mark,markSupported,transferTo
+//InputStream 和 OutputStream为各种输入输出字节流的基类，所有字节流都继承这两个基类。
 
 //        InputStream in = new InputStream(read()) {
 //

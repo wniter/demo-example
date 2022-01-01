@@ -1,6 +1,5 @@
 # demo-example
- 记录
- class Test ,reflant,stream
+以后再补充
  
  one:
  1.not finish classTest, should handle reflant together.
@@ -10,7 +9,7 @@
 5. Charset ByteBuffer
 
  two:
- stramTest maybe handle with collection Constructor
+ streamTest maybe handle with collection Constructor
  three:
  SystemTest refer to gc and so so 
  four:
