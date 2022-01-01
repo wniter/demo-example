@@ -8,9 +8,10 @@ import java.lang.reflect.Type;
  */
 //java.lang.reflect.Constructor
 public class ConstructorTest {
+    private Constructor _constructor;
     public static void main(String[] args) throws Exception {
         //newInstance,getParameterTypes,setAccessible,getDeclaringClass,getModifiers,getParameterAnnotations,
-        // \getGenericParameterTypes,isAccessible,getAnnotation,getName,isVarArgs,getExceptionTypes,getParameterCount,
+        // getGenericParameterTypes,isAccessible,getAnnotation,getName,isVarArgs,getExceptionTypes,getParameterCount,
         // isAnnotationPresent,toString,getParameters,getGenericExceptionTypes,getTypeParameters,getDeclaredAnnotations,
         // equals,toGenericString,isSynthetic,getAnnotations,hashCode,getAnnotationsByType,<init>,getSignature,
         // initGenericTypes,appendTypeName,getSignatureAttribute,internalNewInstance,appendArrayGenericType,
@@ -30,12 +31,12 @@ public class ConstructorTest {
             Class<?>[] pType = ctor.getParameterTypes();
             for (int i = 0; i < pType.length; i++) {
                 if (pType[i].equals(cArg)) {
-                    out.format("%s%n", ctor.toGenericString());
+                    String.format("%s%n", ctor.toGenericString());
 
                     Type[] gpType = ctor.getGenericParameterTypes();
                     for (int j = 0; j < gpType.length; j++) {
                         char ch = (pType[j].equals(cArg) ? '*' : ' ');
-                        out.format("%7c%s[%d]: %s%n", ch,
+                        String.format("%7c%s[%d]: %s%n", ch,
                                 "GenericParameterType", j, gpType[j]);
                     }
                     break;
@@ -43,5 +44,9 @@ public class ConstructorTest {
 
             }
         }
+
+    }
+    protected Object instantiate ()throws Exception {
+        return _constructor.newInstance();
     }
 }

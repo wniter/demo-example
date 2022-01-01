@@ -3,10 +3,10 @@
  
  one:
  1.not finish classTest, should handle reflant together.
- 2. file
- 3. Pattern Method InputStream
- 4. Collectors Field OutputStream
-5. Charset ByteBuffer
+ 2. file Thread
+
+
+
 
  two:
  streamTest maybe handle with collection Constructor
