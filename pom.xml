@@ -124,6 +124,11 @@
             <version>3.16.1</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+            <version>3.4.2</version>
+        </dependency>
     </dependencies>
 
 

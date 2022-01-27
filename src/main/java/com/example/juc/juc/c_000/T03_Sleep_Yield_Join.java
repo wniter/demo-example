@@ -1,22 +1,15 @@
-package com.example.juc.juc.threadbasicconcept;
+package com.example.juc.juc.c_000;
 
-/**
- * @create 2022-01-27 7:35
- */
-//Sleep:使当前正在执行的线程进入睡眠状态
-//yield:给线程调度器一个暗示，暗示当前线程愿意让出CPU的使用，但是线程调度器可能忽略此暗示，继续执行该线程，也可能调用别的线程。但是它不让出锁，对锁没作用。
-//join:等待这个线程死亡
-public class Sleep_Yield_Join {
+public class T03_Sleep_Yield_Join {
     public static void main(String[] args) {
 //        testSleep();
 //        testYield();
         testJoin();
     }
 
-
-    private static void testSleep() {
-        new Thread(() -> {
-            for (int i = 0; i < 100; i++) {
+    static void testSleep() {
+        new Thread(()->{
+            for(int i=0; i<100; i++) {
                 System.out.println("A" + i);
                 try {
                     Thread.sleep(500);
@@ -29,24 +22,26 @@ public class Sleep_Yield_Join {
     }
 
     static void testYield() {
-        new Thread(() -> {
-            for (int i = 0; i < 100; i++) {
+        new Thread(()->{
+            for(int i=0; i<100; i++) {
                 System.out.println("A" + i);
-                if (i % 10 == 0) Thread.yield();
+                if(i%10 == 0) Thread.yield();
+
+
             }
         }).start();
 
-        new Thread(() -> {
-            for (int i = 0; i < 100; i++) {
+        new Thread(()->{
+            for(int i=0; i<100; i++) {
                 System.out.println("------------B" + i);
-                if (i % 10 == 0) Thread.yield();
+                if(i%10 == 0) Thread.yield();
             }
         }).start();
     }
 
     static void testJoin() {
-        Thread t1 = new Thread(() -> {
-            for (int i = 0; i < 100; i++) {
+        Thread t1 = new Thread(()->{
+            for(int i=0; i<100; i++) {
                 System.out.println("A" + i);
                 try {
                     Thread.sleep(500);
@@ -57,7 +52,7 @@ public class Sleep_Yield_Join {
             }
         });
 
-        Thread t2 = new Thread(() -> {
+        Thread t2 = new Thread(()->{
 
             try {
                 t1.join();
@@ -65,7 +60,7 @@ public class Sleep_Yield_Join {
                 e.printStackTrace();
             }
 
-            for (int i = 0; i < 100; i++) {
+            for(int i=0; i<100; i++) {
                 System.out.println("A" + i);
                 try {
                     Thread.sleep(500);
