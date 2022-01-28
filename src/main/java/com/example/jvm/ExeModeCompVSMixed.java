@@ -19,7 +19,7 @@ public class ExeModeCompVSMixed {
            pi = 3.14/2.58;
            pi = 3.14;
            long t = Runtime.getRuntime().totalMemory();
-           new com.mashibing.jvm.ExeModeCompVSMixed();
+           new ExeModeCompVSMixed();
         }
 
         return "";
