@@ -7,7 +7,7 @@ import kilim.Task;
 /**
  * @create 2022-01-27 6:44
  */
-//Coroutine-demo
+//Coroutine-demo协同程序
 public class Coroutine {
     public static void main(String[] args) {
         Task task  = new Task() {
