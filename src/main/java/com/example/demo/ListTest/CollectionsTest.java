@@ -5,6 +5,7 @@ package com.example.demo.ListTest;
  */
 public class CollectionsTest {
     public static void main(String[] args) {
+        //Collections
         //emptyList,sort,singletonList,unmodifiableList,emptyMap,emptySet,unmodifiableMap,singleton,unmodifiableSet,
         //singletonMap,addAll,reverse,unmodifiableCollection,shuffle,enumeration,list,synchronizedMap,synchronizedList,
         //reverseOrder,emptyIterator,binarySearch,synchronizedSet,max,newSetFromMap,nCopies,min,disjoint,
