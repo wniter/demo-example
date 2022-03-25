@@ -24,7 +24,11 @@
             <artifactId>guava</artifactId>
             <version>31.1-jre</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>2.6.0</version>
+        </dependency>
         <dependency>
             <groupId>org.db4j</groupId>
             <artifactId>kilim</artifactId>
